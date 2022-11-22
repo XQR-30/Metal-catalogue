@@ -1,0 +1,4 @@
+# requires Python3
+
+astropy == 5.1
+numpy == 1.22.4
