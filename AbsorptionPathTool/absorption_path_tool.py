@@ -335,6 +335,8 @@ class AbsorptionPath():
         for qso_id in self.qso_idlist:
             total_absorption_path += self.calc_quasar_dz(qso_id, zrange)
 
+        return total_absorption_path
+
     # Return redshift boundaries for bins splitting the survey evenly in dX or dz.
     def split_probed_zrange(self, config = {}):
         if 'nbins' in config:
